@@ -1,16 +1,8 @@
-class Dog 
-  
-  def name=(dog_name)
-    this_dogs_name = dog_name
+teachers = []
+count = 0
+while count < teachers.size do
+  if teachers[count][:campus] == "Austin" do
+  	teachers.shift(teachers[count][:campus])
   end
-  
-  def name 
-    this_dogs_name
-  end 
-  
+  count += 1
 end 
-
-lassie = Dog.new
-lassie.name = "Lassie"
-
-puts lassie.name 
