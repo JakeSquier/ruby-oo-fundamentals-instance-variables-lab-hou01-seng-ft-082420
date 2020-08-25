@@ -1,8 +1,15 @@
-teachers = []
-count = 0
-while count < teachers.size do
-  if teachers[count][:campus] == "Austin" do
-  	teachers.shift(teachers[count][:campus])
+class Dog
+ 
+  def name=(dogs_name)
+    @this_dogs_name = dogs_name
   end
-  count += 1
-end 
+ 
+  def name
+    @this_dogs_name
+  end
+end
+ 
+lassie = Dog.new
+lassie.name = "Lassie"
+ 
+puts lassie.name
